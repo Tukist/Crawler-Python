@@ -1,18 +1,17 @@
-# Python API For JMComic (禁漫天堂)
+# Python API For JM
 
 本项目封装了一套可用于爬取JM的Python API.
 
-你可以通过简单的几行Python代码，实现下载JM上的本子到本地，并且是处理好的图片。
+你可以通过简单的几行Python代码，实现下载JM到本地，并且是处理好的图片。
 
-[【指路】教程：使用GitHub Actions下载禁漫本子](./assets/docs/sources/tutorial/1_github_actions.md)
+[【指路】教程：使用GitHub Actions](./assets/docs/sources/tutorial/1_github_actions.md)
 
-[【指路】教程：导出并下载你的禁漫收藏夹数据](./assets/docs/sources/tutorial/10_export_favorites.md)
+[【指路】教程：导出并下载你的收藏夹数据](./assets/docs/sources/tutorial/10_export_favorites.md)
 
-**友情提示：珍爱JM，为了减轻JM的服务器压力，请不要一次性爬取太多本子，西门🙏🙏🙏**.
 
 ## 项目介绍
 
-本项目的核心功能是下载本子。
+本项目的核心功能是爬取图片文件。
 
 基于此，设计了一套方便使用、便于扩展，能满足一些特殊下载需求的框架。
 
@@ -21,10 +20,10 @@
 除了下载功能以外，也实现了其他的一些禁漫接口，按需实现。目前已有功能：
 
 - 登录
-- 搜索本子（支持所有搜索项）
+- 搜索（支持所有搜索项）
 - 图片下载解码
 - 分类/排行榜
-- 本子/章节详情
+- 章节详情
 - 个人收藏夹
 - 接口加解密（APP的接口）
 
@@ -47,7 +46,7 @@
 
 ### 1. 下载本子方法
 
-只需要使用如下代码，就可以下载本子`JM422866`的所有章节的图片：
+只需要使用如下代码，就可以下载`JM422866`的所有章节的图片：
 
 ```python
 import jmcomic  # 导入此模块，需要先安装.
@@ -182,7 +181,6 @@ jmcomic 123
 
 ## 感谢以下项目
 
-### 图片分割算法代码+禁漫移动端API
 
 <a href="https://github.com/tonquer/JMComic-qt">
   <picture>
